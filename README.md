@@ -1,6 +1,7 @@
 # Paperclip::SmartDataUriAdapter
 
-TODO: Write a gem description
+Smarter Paperclip::DataUriAdapter that guesses the file extension to use instead of just naming everything as
+base64.txt.
 
 ## Installation
 
@@ -18,7 +19,7 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Just attach any data uri and magic happens.
 
 ## Contributing
 

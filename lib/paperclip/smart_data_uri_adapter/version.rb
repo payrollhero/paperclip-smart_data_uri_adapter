@@ -1,5 +1,5 @@
 module Paperclip
-  module SmartDataUriAdapter
-    VERSION = "0.0.1"
+  class SmartDataUriAdapter < DataUriAdapter
+    VERSION = "1.0.0"
   end
 end
