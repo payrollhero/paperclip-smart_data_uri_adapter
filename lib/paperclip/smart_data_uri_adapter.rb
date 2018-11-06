@@ -8,6 +8,8 @@ module Paperclip
     class << self
 
       def replace_original_adapter
+        found = registered_handlers.find &original_adapter?
+        Paperclip::DataUriAdapter.register unless found
         data_uri_test = find_and_delete_original_adapter
         Paperclip.io_adapters.register Paperclip::SmartDataUriAdapter, &data_uri_test
       end
